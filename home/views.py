@@ -1,8 +1,8 @@
 from django.contrib import messages
+from django.db import connection
 from django.shortcuts import redirect, render
 
 from home.models import accounts, events
-from django.db import connection
 
 
 # Create your views here.
@@ -63,17 +63,13 @@ def createevent(request):
     else:
         return render(request, 'createevent.html')
     
-def eventshow(request):
+def wedding(request):
     cursor = connection.cursor()
     cursor.execute(
         'SELECT * FROM home_events WHERE event_type="Wedding" ORDER BY id DESC;')
     allPosts = cursor.fetchall()
     cursor.close()
-    return render(request, 'events.html', {'allPosts': allPosts})
-
-
-def contacts(request):
-    return render(request, 'contacts.html')
+    return render(request, 'wedding.html', {'allPosts': allPosts})
 
 def birthday(request):
     cursor = connection.cursor()
@@ -85,3 +81,18 @@ def birthday(request):
 
 def booking(request):
     return render(request, 'booking.html')
+def concert(request):
+    cursor = connection.cursor()
+    cursor.execute(
+        'SELECT * FROM home_events WHERE event_type="Concert" ORDER BY id DESC;')
+    allPosts = cursor.fetchall()
+    cursor.close()
+    return render(request, 'concert.html', {'allPosts': allPosts})
+
+def corporate(request):
+    cursor = connection.cursor()
+    cursor.execute(
+        'SELECT * FROM home_events WHERE event_type="Corporate" ORDER BY id DESC;')
+    allPosts = cursor.fetchall()
+    cursor.close()
+    return render(request, 'corporate.html', {'allPosts': allPosts})

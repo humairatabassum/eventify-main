@@ -25,14 +25,11 @@
             <a href="{% url 'login' %}">LogIn</a>
             <a href="{% url 'registration' %}">register</a>
             <a href="{% url 'createevent' %}">Event</a>
-            <a href="{% url 'contacts' %}">contact</a>
+            {% comment %} <a href="{% url 'contacts' %}">contact</a> {% endcomment %}
 
         </nav>
 
         <div id="menu-bars" class="fas fa-bars"></div>
-
-
-
     </header>
     <!-- header section ends -->
 
@@ -245,7 +242,7 @@
                     <li><i class="fas fa-check"></i>invitation card</li>
                 </ul>
 
-                <a href="{% url 'events' %}" class="btn">check out</a>
+                <a href="{% url 'wedding' %}" class="btn">check out</a>
             </div>
 
             <div class="box">
@@ -259,7 +256,7 @@
                     <li><i class="fas fa-check"></i>invitation card</li>
                 </ul>
 
-                <a href="{% url 'events' %}" class="btn">check out</a>
+                <a href="{% url 'concert' %}" class="btn">check out</a>
             </div>
 
 
@@ -275,7 +272,7 @@
                     <li><i class="fas fa-check"></i>invitation card</li>
                 </ul>
 
-                <a href="{% url 'events' %}" class="btn">check out</a>
+                <a href="{% url 'corporate' %}" class="btn">check out</a>
             </div>
 
         </div>
