@@ -1,0 +1,69 @@
+body{
+    background-color: #333;
+}
+
+.booking-form {
+    width: 500px;
+    margin: 0 auto;
+    padding: 50px;
+    background: #000000;
+  }
+  
+  div.elem-group {
+    margin: 20px 0;
+  }
+  
+  div.elem-group.inlined {
+    width: 49%;
+    display: inline-block;
+    float: left;
+    margin-left: 1%;
+  }
+  
+  label {
+    display: block;
+    font-family: 'Nanum Gothic';
+    padding-bottom: 8px;
+    font-size: 1.10em;
+  }
+  
+  input, select, textarea {
+    background-color: #313030;
+    border-radius: 2px;
+    border: 2px solid #777;
+    box-sizing: border-box;
+    font-size: 1.10em;
+    font-family: 'Nanum Gothic';
+    width: 100%;
+    padding: 5px;
+    color: white;
+  }
+  
+  div.elem-group.inlined input {
+    width: 95%;
+    display: inline-block;
+  }
+  
+  textarea {
+    height: 150px;
+  }
+  
+  hr {
+    border: 1px dotted #ccc;
+  }
+  
+  button {
+    height: 50px;
+    background: orange;
+    border: none;
+    color: white;
+    font-size: 1.10em;
+    font-family: 'Nanum Gothic';
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 0 8px;
+  }
+  
+  button:hover {
+    background: #e38f30c9;
+  }

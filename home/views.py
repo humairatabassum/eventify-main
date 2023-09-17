@@ -82,3 +82,6 @@ def birthday(request):
     allPosts = cursor.fetchall()
     cursor.close()
     return render(request, 'birthday.html', {'allPosts': allPosts})
+
+def booking(request):
+    return render(request, 'booking.html')
