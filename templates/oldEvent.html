@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+    <table>
+  <tr>
+    <th>Type</th>
+    <th>Capacity</th>
+    <th>Pricing</th>
+  </tr>
+    {% for post in allPosts %}
+  <tr>
+    <td>{{ post.1 }}</td>
+    <td>{{ post.2 }}</td> 
+    <td>{{ post.3 }}</td>
+  </tr>
+    {% endfor %}
+</table>
+
+</body>
+
+</html>

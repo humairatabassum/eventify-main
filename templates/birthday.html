@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="../static/wedding.css">
+
+<div class="ag-format-container">
+
+    
+    <div class="heading" style="text-align: center; padding: 30px;">
+        <h2 style="color: green; font-size: 30px; text-shadow: 2px 1px 2px white;">Birthday Event card</h2>
+      </div>
+
+    <div class="ag-courses_box">
+        
+        {% for post in allPosts %}
+
+
+      <div class="ag-courses_item">
+        <a href="#" class="ag-courses-item_link">
+          <div class="ag-courses-item_bg"></div>
+
+          <div class="ag-courses-item_title">
+            {{ post.1 }}
+          </div>
+  
+          <div class="ag-courses-item_date-box">
+            Capacity:
+            <span class="ag-courses-item_date">
+                {{ post.2 }}
+            </span>
+          </div>
+          <div class="ag-courses-item_date-box">
+            Price:
+            <span class="ag-courses-item_date">
+                {{ post.3 }}
+            </span>
+          </div>
+        </a>
+      </div>
+
+      {% endfor %}
+
+
+  
+    </div>
+  </div>

@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventiFy:Your Event, Our Expertise</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <!-- <custom css file link -->
+    <link rel="stylesheet" href="static\index\css\index.css">
+      <!-- header section starts -->
+    <header class="header">
+
+        <a href="#" class="logo"><span>e</span>venti<span>fy</span></a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#service">Service</a>
+            <a href="#about">About</a>
+            <a href="{% url 'login' %}">LogIn</a>
+            <a href="{% url 'registration' %}">register</a>
+            <a href="{% url 'createevent' %}">Event</a>
+            <a href="{% url 'contacts' %}">contact</a>
+
+        </nav>
+
+        <div id="menu-bars" class="fas fa-bars"></div>
+
+
+
+    </header>
+    <!-- header section ends -->
+
+    <!-- home section starts -->
+    <section class="home" id="home">
+        <div class="content">
+
+            <h3>Its Time To celebrate! <br> Make your special day more special with<span> Eventify</span></h3>
+            <!-- <a href="#contact" class="btn">Contact Us</a> -->
+
+        </div>
+        <div class="swiper mySwiper home-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="static\index\img\slide-1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="static\index\img\slide-2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="static\index\img\slide-3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="static\index\img\slide-4.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="static\index\img\slide-5.jpg" alt=""></div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- home section ends -->
+
+
+<!-- servive section starts -->
+<section class="service" id="service">
+
+    <h1 class="heading">our<span> services</span></h1>
+
+    <div class="box-container">
+        <div class="box">
+           
+            <img class="demo cursor" src="image/img_snow_wide.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">   
+            <h3>Birthdays</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos ipsum exercitationem debitis, </p>
+
+        </div>
+
+       
+        <div class="box">
+            <img class="demo cursor" src="image/img_snow_wide.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">   
+            <h3>invitation card</h3>
+            <!-- <a href="#" class="btn">check out</a>   -->
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos ipsum exercitationem debitis, </p>
+
+        </div>
+
+        <div class="box">
+            <img class="demo cursor" src="image/img_snow_wide.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">   
+            <h3>entertainment</h3>
+            <!-- <a href="#" class="btn">check out</a>   -->
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos ipsum exercitationem debitis, </p>
+
+        </div>
+
+        <div class="box">
+            <img class="demo cursor" src="image/img_snow_wide.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">   
+            <h3>food and drinks</h3>
+            <!-- <a href="#" class="btn">check out</a>   -->
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos ipsum exercitationem debitis, </p>
+
+        </div>
+
+        <div class="box">
+            <img class="demo cursor" src="image/img_snow_wide.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">   
+            <h3>photos and videos</h3>
+            <!-- <a href="#" class="btn">check out</a>   -->
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos ipsum exercitationem debitis, </p>
+
+        </div>
+
+        <div class="box">
+            <img class="demo cursor" src="image/img_snow_wide.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">   
+            <h3>custom food</h3>
+            <!-- <a href="#" class="btn">check out</a>   -->
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos ipsum exercitationem debitis, </p>
+
+        </div>
+
+        <div class="box">
+            <img class="demo cursor" src="image/img_snow_wide.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">   
+            <h3>Weddings</h3>
+            <!-- <a href="#" class="btn">check out</a>   -->
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos ipsum exercitationem debitis, </p>
+
+        </div>
+
+        <div class="box">
+            <img class="demo cursor" src="image/img_snow_wide.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">   
+            <h3>Corporate Events</h3>
+            <!-- <a href="#" class="btn">check out</a>   -->
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos ipsum exercitationem debitis, </p>
+
+        </div>
+
+    </div>
+
+</section>
+     <!-- servive section ends -->
+
+    <!-- About section starts -->
+
+    <section class="about" id="about">
+        <h1 class="heading"><span>about</span> us </h1>
+        <div class="row">
+            <div class="image">
+                <img src="static\index\img\slide-6.jpg" alt="">
+            </div>
+
+            <div class="content">
+                <h3>Your Event, Our Expertise</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam quis </p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, omnis.</p>
+                <a href="contact" class="btn">contact us</a>
+            </div>
+        </div>
+    </section>
+    <!-- About section ends -->
+
+    <!-- Gallery section starts -->
+    <section class="gallery" id="gallery">
+        <h1 class="heading">our<span> gallery</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="static\index\img\slide-1.jpg" alt="">
+                <h3 class="title">photos and events</h3>
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="static\index\img\g2.jpg" alt="">
+                <h3 class="title">photos and events</h3>
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="static\index\img\g3.jpg" alt="">
+                <h3 class="title">photos and events</h3>
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="static\index\img\slide-2.jpg" alt="">
+                <h3 class="title">photos and events</h3>
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <img src="static\index\img\g5.jpg" alt="">
+                <h3 class="title">photos and events</h3>
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+    <!-- Gallery section ends -->
+
+    <!-- Price section starts -->
+    <section class="price" id="price">
+
+        <h1 class="heading">our <span>Price</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <h3 class="title"> for birthdays </h3>
+                <!-- <h3 class="amount">TK: 5000/-</h3> -->
+                <ul>
+                    <li><i class="fas fa-check"></i>full services</li>
+                    <li><i class="fas fa-check"></i>decoration</li>
+                    <li><i class="fas fa-check"></i>music</li>
+                    <li><i class="fas fa-check"></i>food and drinks</li>
+                    <li><i class="fas fa-check"></i>invitation card</li>
+                </ul>
+
+                <a href="{% url 'birthday' %}" class="btn">check out</a>
+            </div>
+
+
+            <div class="box">
+                <h3 class="title"> for weddings </h3>
+                <!-- <h3 class="amount">TK: 155000/-</h3> -->
+                <ul>
+                    <li><i class="fas fa-check"></i>full services</li>
+                    <li><i class="fas fa-check"></i>decoration</li>
+                    <li><i class="fas fa-check"></i>music and photos</li>
+                    <li><i class="fas fa-check"></i>food and drinks</li>
+                    <li><i class="fas fa-check"></i>invitation card</li>
+                </ul>
+
+                <a href="{% url 'events' %}" class="btn">check out</a>
+            </div>
+
+            <div class="box">
+                <h3 class="title"> for concerts </h3>
+                <!-- <h3 class="amount">TK: 75000/-</h3> -->
+                <ul>
+                    <li><i class="fas fa-check"></i>full services</li>
+                    <li><i class="fas fa-check"></i>decoration</li>
+                    <li><i class="fas fa-check"></i>music and photos</li>
+                    <li><i class="fas fa-check"></i>food and drinks</li>
+                    <li><i class="fas fa-check"></i>invitation card</li>
+                </ul>
+
+                <a href="{% url 'events' %}" class="btn">check out</a>
+            </div>
+
+
+
+            <div class="box">
+                <h3 class="title"> for corporate events </h3>
+                <!-- <h3 class="amount">TK: 65000/- </h3> -->
+                <ul>
+                    <li><i class="fas fa-check"></i>full services</li>
+                    <li><i class="fas fa-check"></i>decoration</li>
+                    <li><i class="fas fa-check"></i>music and photos</li>
+                    <li><i class="fas fa-check"></i>food and drinks</li>
+                    <li><i class="fas fa-check"></i>invitation card</li>
+                </ul>
+
+                <a href="{% url 'events' %}" class="btn">check out</a>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Price section ends -->
+
+
+    <!-- review section starts -->
+    <section class="review" id="review">
+        <h1 class="heading">client's <span>review</span></h1>
+        <div class="review-slider swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="static\index\img\c1.jpg" alt="">
+                        <div class="user-info">
+                            <h3>john deo</h3>
+                            <span>happy clients</span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Fugiat eveniet nihil necessitatibus ex eaque maiores rerum
+                        quisquam reprehenderit natus voluptate?</p>
+                </div>
+
+
+                <div class="swiper-slide box">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="static\index\img\c2.jpg" alt="">
+                        <div class="user-info">
+                            <h3>Emma deo</h3>
+                            <span>happy clients</span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Fugiat eveniet nihil necessitatibus ex eaque maiores
+                        rerum quisquam reprehenderit natus voluptate?</p>
+                </div>
+
+                <div class="swiper-slide box">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="static\index\img\c1.jpg" alt="">
+                        <div class="user-info">
+                            <h3>john deo</h3>
+                            <span>happy clients</span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Fugiat eveniet nihil necessitatibus ex eaque
+                        maiores rerum quisquam reprehenderit natus voluptate?</p>
+                </div>
+
+
+                <div class="swiper-slide box">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="static\index\img\c1.jpg" alt="">
+                        <div class="user-info">
+                            <h3>john deo</h3>
+                            <span>happy clients</span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Fugiat eveniet nihil necessitatibus ex
+                        eaque maiores rerum quisquam reprehenderit natus voluptate?</p>
+                </div>
+
+                <div class="swiper-slide box">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="static\index\img\c1.jpg" alt="">
+                        <div class="user-info">
+                            <h3>john deo</h3>
+                            <span>happy clients</span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Fugiat eveniet nihil necessitatibus ex
+                        eaque maiores rerum quisquam reprehenderit natus voluptate?</p>
+                </div>
+
+                <div class="swiper-slide box">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="static\index\img\c1.jpg" alt="">
+                        <div class="user-info">
+                            <h3>john deo</h3>
+                            <span>happy clients</span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Fugiat eveniet nihil necessitatibus ex
+                        eaque maiores rerum quisquam reprehenderit natus voluptate?</p>
+                </div>
+
+
+                <div class="swiper-slide box">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="static\index\img\c1.jpg" alt="">
+                        <div class="user-info">
+                            <h3>john deo</h3>
+                            <span>happy clients</span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Fugiat eveniet nihil necessitatibus ex
+                        eaque maiores rerum quisquam reprehenderit natus voluptate?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- review section ends -->
+
+    <!-- footer section starts -->
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>branches</h3>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> Dhaka </a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> Chittagong </a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> Sylhet </a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> Rajshahi </a>
+            </div>
+
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="#"><i class="fas fa-arrow-right"></i> home </a>
+                <a href="#"><i class="fas fa-arrow-right"></i> service</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> about </a>
+                <a href="#"><i class="fas fa-arrow-right"></i> gallery </a>
+                <a href="#"><i class="fas fa-arrow-right"></i> price </a>
+                <a href="#"><i class="fas fa-arrow-right"></i> review </a>
+                <a href="#"><i class="fas fa-arrow-right"></i> contact</a>
+
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"><i class="fas fa-phone"></i> 01991051726 </a>
+                <a href="#"><i class="fas fa-phone"></i> 01705268940 </a>
+                <a href="#"><i class="fas fa-envelope"></i> info.eventify@gmail.com </a>
+                <a href="#"><i class="fas fa-envelope"></i> abc.eventify@gmail.com </a>
+                <a href="#"><i class="fas fa-map-maker-alt"></i> Dhaka, Bangladesh </a>
+
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i> facebook </a>
+                <a href="#"><i class="fab fa-twitter"></i> twitter </a>
+                <a href="#"><i class="fab fa-instagram"></i> instagram </a>
+                <a href="#"><i class="fab fa-linkedin"></i> linkedin </a>
+
+
+
+            </div>
+        </div>
+
+        <div class="credit">All rights reserved!</span> </div>
+
+    </section>
+
+
+    <!-- footer section ends -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- custom js file link  -->
+    <script src="static\index\js\script.js"></script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
