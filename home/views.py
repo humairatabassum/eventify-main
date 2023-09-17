@@ -2,7 +2,7 @@ from django.contrib import messages
 from django.db import connection
 from django.shortcuts import redirect, render
 
-from home.models import accounts, events
+from home.models import accounts, booking, events
 
 
 # Create your views here.
@@ -95,5 +95,21 @@ def corporate(request):
     cursor.close()
     return render(request, 'corporate.html', {'allPosts': allPosts})
 
-def booking(request, token):
-    return render(request, 'booking.html')
+def booking_function(request, token):
+    if request.method == 'POST':
+        if request.POST.get('name') and request.POST.get('email') and request.POST.get('phone') and request.POST.get('date'):
+            saveRecord = booking()
+            
+            saveRecord.event_id = token
+            saveRecord.name = request.POST.get('name')
+            saveRecord.email = request.POST.get('email')
+            saveRecord.contact = request.POST.get('phone')
+            saveRecord.date = request.POST.get('date')
+            saveRecord.save()
+            messages.success(request,"added successfully !!")
+            return render(request, 'booking.html')
+            # return HttpResponse("added successfully !!")
+
+    else:
+        return render(request, 'booking.html')
+

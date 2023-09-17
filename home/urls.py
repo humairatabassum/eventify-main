@@ -11,5 +11,5 @@ urlpatterns = [
     path('birthday', views.birthday, name='birthday'),
     path('concert', views.concert, name='concert'),
     path('corporate', views.corporate, name='corporate'),
-    path('booking/<token>/', views.booking, name='booking'),
+    path('booking/<token>/', views.booking_function, name='booking'),
 ]

@@ -22,12 +22,9 @@ class venue(models.Model):
 class booking(models.Model):
     email = models.CharField(max_length=20)
     name = models.CharField(max_length=20)
-    contact = models.IntegerField()
+    contact = models.CharField(max_length=20)
     date = models.DateField()
-    event_type = models.CharField(max_length=20)
-    date_of_event = models.DateField()
-    event_time = models.TimeField()
-    event_location = models.CharField(max_length=20)
+    event_id = models.CharField(max_length=20)
 
 class booked(models.Model):
     client_email = models.CharField(max_length=20)

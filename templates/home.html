@@ -25,22 +25,36 @@
             <a href="{% url 'login' %}">LogIn</a>
             <a href="{% url 'registration' %}">register</a>
             <a href="{% url 'createevent' %}">Event</a>
-            {% comment %} <a href="{% url 'contacts' %}">contact</a> {% endcomment %}
+            <a href="http://127.0.0.1:8000/admin/" target="_blank">Admin Panel</a>
 
         </nav>
 
         <div id="menu-bars" class="fas fa-bars"></div>
     </header>
     <!-- header section ends -->
-
+    {% if messages %}
+                {% for result in messages %}
+                {% if result.tags == "error" %}
+                <div class="alert alert-danger">
+                    {{ result }}
+                </div>
+                {% else %}
+                <div class="alert alert-success">
+                    {{ result }}
+                </div>
+                {% endif %}
+                {% endfor %}
+                {% endif %}
     <!-- home section starts -->
     <section class="home" id="home">
+
         <div class="content">
 
             <h3>Its Time To celebrate! <br> Make your special day more special with<span> Eventify</span></h3>
             <!-- <a href="#contact" class="btn">Contact Us</a> -->
 
         </div>
+
         <div class="swiper mySwiper home-slider">
             <div class="swiper-wrapper">
                 <div class="swiper-slide"><img src="static\index\img\slide-1.jpg" alt=""></div>
