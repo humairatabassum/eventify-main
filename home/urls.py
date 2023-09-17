@@ -9,7 +9,7 @@ urlpatterns = [
 	path('createevent', views.createevent, name='createevent'),
     path('wedding', views.wedding, name='wedding'),
     path('birthday', views.birthday, name='birthday'),
-    path('booking', views.booking, name='booking'),
     path('concert', views.concert, name='concert'),
     path('corporate', views.corporate, name='corporate'),
+    path('booking/<token>/', views.booking, name='booking'),
 ]

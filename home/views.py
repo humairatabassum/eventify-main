@@ -79,8 +79,6 @@ def birthday(request):
     cursor.close()
     return render(request, 'birthday.html', {'allPosts': allPosts})
 
-def booking(request):
-    return render(request, 'booking.html')
 def concert(request):
     cursor = connection.cursor()
     cursor.execute(
@@ -96,3 +94,6 @@ def corporate(request):
     allPosts = cursor.fetchall()
     cursor.close()
     return render(request, 'corporate.html', {'allPosts': allPosts})
+
+def booking(request, token):
+    return render(request, 'booking.html')
