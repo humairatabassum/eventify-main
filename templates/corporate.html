@@ -1,0 +1,87 @@
+<link rel="stylesheet" href="../static/wedding.css">
+
+<div class="ag-format-container">
+
+    
+    <div class="heading" style="text-align: center; padding: 30px;">
+        <h2 style="color: crimson; font-size: 30px; text-shadow: 2px 1px 2px white;">Corporate Event card</h2>
+      </div>
+
+    <div class="ag-courses_box">
+        
+        {% for post in allPosts %}
+
+
+      <div class="ag-courses_item">
+        <a href="#" class="ag-courses-item_link">
+          <div class="ag-courses-item_bg"></div>
+
+          <div class="ag-courses-item_title">
+            {{ post.1 }}
+          </div>
+  
+          <div class="ag-courses-item_date-box">
+            Capacity:
+            <span class="ag-courses-item_date">
+                {{ post.2 }}
+            </span>
+          </div>
+          <div class="ag-courses-item_date-box">
+            Price:
+            <span class="ag-courses-item_date">
+                {{ post.3 }}
+            </span>
+          </div>
+        </a>
+      </div>
+
+      {% endfor %}
+
+
+      <!-- <div class="ag-courses_item">
+        <a href="#" class="ag-courses-item_link">
+          <div class="ag-courses-item_bg"></div>
+  
+          <div class="ag-courses-item_title">
+            UX/UI Web-Design&#160;+ Mobile Design
+          </div>
+  
+          <div class="ag-courses-item_date-box">
+            Start:
+            <span class="ag-courses-item_date">
+              04.11.2022
+            </span>
+          </div>
+        </a>
+      </div>
+  
+  
+      <div class="ag-courses_item">
+        <a href="#" class="ag-courses-item_link">
+          <div class="ag-courses-item_bg">
+          </div>
+          <div class="ag-courses-item_title">
+            Digital Marketing
+          </div>
+        </a>
+      </div>
+  
+      <div class="ag-courses_item">
+        <a href="#" class="ag-courses-item_link">
+          <div class="ag-courses-item_bg"></div>
+  
+          <div class="ag-courses-item_title">
+            Interior Design
+          </div>
+  
+          <div class="ag-courses-item_date-box">
+            Start:
+            <span class="ag-courses-item_date">
+              31.10.2022
+            </span>
+          </div>
+        </a>
+      </div> -->
+  
+    </div>
+  </div>
